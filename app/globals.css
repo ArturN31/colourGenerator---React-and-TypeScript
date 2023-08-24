@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (max-width: 1920px) {
+    #card-row {
+        display: grid;
+        grid-auto-columns: auto;
+    }
+
+    #card-info {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    #card-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
